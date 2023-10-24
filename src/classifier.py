@@ -71,4 +71,5 @@ def classifier(img_path, model_name):
     # return index corresponding to predicted class
     pred_idx = output.data.numpy().argmax()
 
+    #print('pred_idx: ' + str(pred_idx))
     return imagenet_classes_dict[pred_idx]
